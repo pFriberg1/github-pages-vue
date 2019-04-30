@@ -1,5 +1,5 @@
 #!/bin/sh
-trap 'git checkout master' ERR
+set -e
 npm run build
 git checkout gh-pages
 mv dist/* .
@@ -9,4 +9,4 @@ read msg
 git commit -m "$msg"
 git push origin gh-pages
 git checkout master
-echo we did :)
+echo success.
