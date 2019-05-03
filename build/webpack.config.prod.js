@@ -1,6 +1,5 @@
 'use strict'
 
-const webpack = require('webpack')
 const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -18,13 +17,24 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                  'vue-style-loader',
-                  'css-loader'
+                    'vue-style-loader',
+                    'css-loader'
                 ]
             },
             {
                 test: /\.js$/,
                 use: 'babel-loader'
+            },
+            {
+                test: /\.md$/,
+                use: [
+                    {
+                        loader: 'html-loader'
+                    },
+                    {
+                        loader: 'markdown-loader'
+                    }
+                ]
             }
         ]
     },

@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+trap 'git checkout master' ERR
 npm run build
 git checkout gh-pages
 mv dist/* .

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"editor.tabSize": 2,
+		"javascript.preferences.quoteStyle": "single",
+		"typescript.preferences.quoteStyle": "single",
+		"vetur.format.defaultFormatterOptions": {
+			"prettier": {
+				"singleQuote": true,
+			}
+		}
+	}
+}

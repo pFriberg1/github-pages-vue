@@ -14,6 +14,9 @@ module.exports = {
         hot: true,
         watchOptions: {
             poll: true
+        },
+        historyApiFallback: {
+            index: 'index.html'
         }
     },
     module: {
@@ -25,13 +28,24 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                  'vue-style-loader',
-                  'css-loader'
+                    'vue-style-loader',
+                    'css-loader'
                 ]
             },
             {
                 test: /\.js$/,
                 use: 'babel-loader'
+            },
+            {
+                test: /\.md$/,
+                use: [
+                    {
+                        loader: 'html-loader'
+                    },
+                    {
+                        loader: 'markdown-loader'
+                    }
+                ]
             }
         ]
     },

@@ -1,27 +1,25 @@
 <template>
-  <div class="full-width center-content">
-    <hello-component name="World" />
+  <div class="app">
+    <Navbar/>
+    <router-view/>
   </div>
 </template>
 
+
 <script>
-import HelloComponent from './components/HelloComponent.vue';
+import Navbar from './components/Navbar.vue';
 
 export default {
-    components: {
-        HelloComponent
-    }
-}
+  components: {
+    Navbar
+  }
+};
 </script>
 
 
 <style scoped>
-.full-width {
-  width: 100%;
-}
-.center-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.app {
+  max-width: 60em;
+  margin: auto;
 }
 </style>
