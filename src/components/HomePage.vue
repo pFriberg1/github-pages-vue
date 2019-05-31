@@ -9,7 +9,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .home-container {
   display: flex;
   flex-direction: column;

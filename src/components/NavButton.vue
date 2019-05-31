@@ -1,7 +1,6 @@
 <template>
   <div class="btn-container">
-    <div class="nav-btn" @click="$router.push(link)">{{ nanme }}</div>
-    <!-- <button class="nav-btn" @click="$router.push(link)">{{ name }}</button> -->
+    <div class="nav-btn" @click="$router.push(link)">{{ name }}</div>
   </div>
 </template>
 
@@ -16,13 +15,23 @@ export default {
 
 <style scoped>
 .btn-container {
-  margin: 2em;
+  display: flex;
+  margin: 0.5em 1.5em;
   font-size: 1.25em;
 }
 
 .nav-btn {
+  width: 5em;
+  height: 2em;
   padding: 0.25em;
-  background: salmon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.125em gray solid;
+  border-radius: 2em;
+}
+.nav-btn:hover {
+  cursor: pointer;
 }
 </style>
 

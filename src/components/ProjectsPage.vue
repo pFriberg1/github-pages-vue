@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .projects-container {
   display: flex;
   flex-direction: column;

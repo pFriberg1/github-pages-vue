@@ -5,6 +5,7 @@
     </div>
     <div v-else>
       <div class="markdown-content" v-html="project.html"/>
+      <div class="back-btn" @click="$router.push(navbar[1].link)"/>
     </div>
   </div>
 </template>
@@ -27,7 +28,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .project-container {
   display: flex;
   justify-content: center;
@@ -35,8 +36,14 @@ export default {
 }
 
 .markdown-content {
-  justify-content: center;
-  align-items: center;
   text-align: center;
+}
+
+.back-btn {
+  display: flex;
+  align-content: center;
+  background-color: dimgray;
+  width: 2em;
+  height: 1em;
 }
 </style>
