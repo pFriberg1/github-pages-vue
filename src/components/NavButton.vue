@@ -16,14 +16,13 @@ export default {
 <style scoped>
 .btn-container {
   display: flex;
-  margin: 0.5em 1.5em;
+  margin: 0 1.5em;
   font-size: 1.25em;
 }
 
 .nav-btn {
   width: 5em;
   height: 2em;
-  padding: 0.25em;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -5,7 +5,7 @@
     </div>
     <div v-else>
       <div class="markdown-content" v-html="project.html"/>
-      <div class="back-btn" @click="$router.push(navbar[1].link)"/>
+      <div class="back-btn" @click="$router.push('/projects')">Back</div>
     </div>
   </div>
 </template>
@@ -33,17 +33,28 @@ export default {
   display: flex;
   justify-content: center;
   align-content: center;
-}
 
-.markdown-content {
-  text-align: center;
-}
+  .markdown-content {
+    text-align: center;
+  }
 
-.back-btn {
-  display: flex;
-  align-content: center;
-  background-color: dimgray;
-  width: 2em;
-  height: 1em;
+  .back-btn {
+    display: flex;
+    color: #eee;
+    border-radius: 0.25em;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgray;
+    width: 3em;
+    height: 2em;
+  }
+
+  .back-btn:hover {
+    cursor: pointer;
+  }
+}
+img {
+  width: auto;
+  height: 4em;
 }
 </style>

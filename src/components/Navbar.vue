@@ -1,6 +1,5 @@
 <template>
   <div class="header-container">
-    <img class="project-logo" src="/src/assets/img/GitHub-Mark-120px-plus.png">
     <nav class="nav-container">
       <nav-button
         :name="navData.name"
@@ -9,6 +8,7 @@
         v-for="navData in navbar"
       />
     </nav>
+    <a href="https://www.github.com/pFriberg1">github profile</a>
   </div>
 </template>
 
@@ -20,20 +20,25 @@ export default {
   components: {
     NavButton
   },
-  data: () => data
+  data: function() {
+    return data;
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 .header-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
-  .project-logo {
-    width: 5em;
-    height: 5em;
+  a {
+    margin: 1em 0;
+    color: skyblue;
+    text-decoration: inherit;
   }
+
   .nav-container {
     display: flex;
     flex-direction: row;

@@ -5,6 +5,7 @@ import HomePage from './components/HomePage.vue'
 import ProjectsPage from './components/ProjectsPage.vue'
 import AboutPage from './components/AboutPage.vue'
 import Project from './components/Project.vue'
+import NotFound from './components/NotFound.vue'
 
 
 Vue.use(Router)
@@ -30,6 +31,14 @@ const router = new Router({
       path: '/about',
       name: 'About',
       component: AboutPage
+    },
+    {
+      path: '/404',
+      component: NotFound
+    },
+    {
+      path: '*',
+      redirect: '/404'
     }
   ]
 });
