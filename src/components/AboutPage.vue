@@ -1,12 +1,16 @@
 <template>
   <div class="about-container">
-    <h1>About</h1>
-    <div>About goes here</div>
+    <div v-html="pages.about.html"/>
   </div>
 </template>
 
 <script>
-export default {};
+import data from '../data.js';
+export default {
+  data: function() {
+    return data;
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -15,5 +19,6 @@ export default {};
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 </style>

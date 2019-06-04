@@ -17,7 +17,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 .app {
   max-width: 60em;
   margin: auto;

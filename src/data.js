@@ -1,6 +1,7 @@
 import FishbotMd from './documents/projects/Fishbot.md';
 import EmailsyncMd from './documents/projects/Emailsync.md';
 import VuegitMd from './documents/projects/Vuegit.md';
+import AboutMd from './documents/about/About.md';
 
 export default {
   navbar: [
@@ -17,6 +18,11 @@ export default {
       uri: '/about'
     }
   ],
+  pages: {
+    'about': {
+      'html': AboutMd
+    }
+  },
   projects: {
     'fishing_bot': {
       'title': 'Fishing bot',

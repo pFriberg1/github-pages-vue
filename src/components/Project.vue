@@ -53,8 +53,4 @@ export default {
     cursor: pointer;
   }
 }
-img {
-  width: auto;
-  height: 4em;
-}
 </style>
